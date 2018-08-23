@@ -15,6 +15,10 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
+pkg_setup() {
+	mkdir -p "${S}/usr/bin"
+}
+
 src_install() {
-	newbin client ix
+	newbin "${DISTDIR}"/client ix
 }
