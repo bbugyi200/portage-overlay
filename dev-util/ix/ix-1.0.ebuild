@@ -16,5 +16,5 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	dobin ix
+	newbin client ix
 }
