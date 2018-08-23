@@ -9,7 +9,7 @@
         <email>bryanbugyi34@gmail.com</email>
         <name>Bryan Bugyi</name>
       </owner>
-      <source type="git">git://git@github.com/bbugyi200/portage-overlay.git</source>
+      <source type="git">git+ssh://git@github.com/bbugyi200/portage-overlay.git</source>
       <feed>https://github.com/bbugyi200/portage-overlay/commits/master.atom</feed>
     </repo>
 </repositories>
