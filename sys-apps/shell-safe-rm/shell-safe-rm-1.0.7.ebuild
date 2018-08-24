@@ -16,8 +16,11 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
+src_compile() {
+	:
+}
+
 src_install() {
-	dodoc Changes COPYING INSTALL README
-	newbin rm.sh safe-rm
+	newbin bin/rm.sh safe-rm
 }
 
