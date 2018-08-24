@@ -5,7 +5,8 @@ EAPI=6
 
 DESCRIPTION="Preventing the accidental deletion of important files"
 HOMEPAGE="https://github.com/kaelzhang/shell-safe-rm"
-SRC_URI="https://github.com/kaelzhang/shell-safe-rm/archive/"${P}".tar.gz"
+SRC_URI="https://github.com/kaelzhang/${PN}/archive/${PV}.tar.gz"
+
 
 LICENSE="MIT"
 SLOT="0"
