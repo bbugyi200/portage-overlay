@@ -12,7 +12,3 @@ SRC_URI="https://github.com/nerab/TaskWarriorMail/archive/v${PV}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
-
-DEPEND=""
-RDEPEND="${DEPEND}"
