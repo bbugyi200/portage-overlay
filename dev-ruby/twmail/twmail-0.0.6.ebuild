@@ -10,7 +10,7 @@ inherit ruby-fakegem
 DESCRIPTION="twmail allows you to mail new tasks to your TaskWarrior inbox"
 HOMEPAGE="https://github.com/nerab/TaskWarriorMail"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
