@@ -6,8 +6,8 @@ EAPI=6
 PYTHON_COMPAT=( python2_7 python3_6 )
 inherit distutils-r1
 
-DESCRIPTION="An extension for flake8 that lets you configure (out-of-source) individual error codes to be ignored per file."
-HOMEPAGE="https://github.com/snoack/flake8-per-file-ignores"
+DESCRIPTION="Python implementation of git's wildmatch and POSIX.1-2008 fnmatch."
+HOMEPAGE="https://github.com/demurgos/py-pathmatch"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -15,8 +15,5 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="
->=dev-python/flake8-3.0
-dev-python/pathmatch
-"
+DEPEND=""
 RDEPEND="${DEPEND}"
