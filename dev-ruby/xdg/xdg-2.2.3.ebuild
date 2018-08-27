@@ -3,10 +3,13 @@
 
 EAPI=6
 
+USE_RUBY="ruby21 ruby22 ruby23"
+
+inherit ruby-fakegem
+
 DESCRIPTION="XDG provides an easy to use Ruby library for working with XDG standards."
 HOMEPAGE="https://github.com/rubyworks/xdg"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
