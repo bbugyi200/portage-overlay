@@ -3,12 +3,9 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_6 )
-inherit distutils-r1
-
 DESCRIPTION="A Python command line client for tldr."
 HOMEPAGE="https://github.com/tldr-pages/tldr-python-client"
-SRC_URI="https://github.com/tldr-pages/${PN}/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/tldr-pages/tldr-python-client/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,3 +16,18 @@ DEPEND="
 >=dev-python/pyyaml-3.11
 "
 RDEPEND="${DEPEND}"
+
+src_prepare() {
+	export SETUPTOOLS_SCM_PRETEND_VERSION="${PV}"
+	default
+}
+
+src_compile() {
+	cd tldr-python-client-"${PV}"
+	python setup.py build
+}
+
+src_install() {
+	cd tldr-python-client-"${PV}"
+	python setup.py install -O1 --prefix=/usr --root="${D}"
+}
