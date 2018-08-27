@@ -3,6 +3,8 @@
 
 EAPI=6
 
+USE_RUBY="ruby21 ruby22 ruby23"
+
 inherit ruby-fakegem
 
 DESCRIPTION="twmail allows you to mail new tasks to your TaskWarrior inbox"
