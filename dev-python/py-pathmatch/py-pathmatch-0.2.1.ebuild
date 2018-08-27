@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python implementation of git's wildmatch and POSIX.1-2008 fnmatch."
 HOMEPAGE="https://github.com/demurgos/py-pathmatch"
-SRC_URI="https://github.com/demurgos/${P}/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/demurgos/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
