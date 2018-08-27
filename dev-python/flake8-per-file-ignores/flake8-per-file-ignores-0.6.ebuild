@@ -17,6 +17,6 @@ IUSE=""
 
 DEPEND="
 >=dev-python/flake8-3.0
-dev-python/pathmatch
+dev-python/py-pathmatch
 "
 RDEPEND="${DEPEND}"
