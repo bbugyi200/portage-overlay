@@ -12,8 +12,6 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
-
 ruby_add_rdepend ">=dev-ruby/erubis"
 ruby_add_rdepend ">=dev-ruby/thor-0.15"
 ruby_add_rdepend ">=dev-ruby/xdg-2.2.3"
