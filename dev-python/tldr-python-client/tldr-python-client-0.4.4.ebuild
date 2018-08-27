@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="A Python command line client for tldr."
 HOMEPAGE="https://github.com/tldr-pages/tldr-python-client"
-SRC_URI="https://github.com/tldr-pages/tldr-python-client/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/tldr-pages/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
