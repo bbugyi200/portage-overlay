@@ -8,7 +8,6 @@ inherit ruby-fakegem
 
 DESCRIPTION="GitHub Issues on the command line. Use your $EDITOR, not your browser."
 HOMEPAGE="https://github.com/stephencelis/ghi"
-SRC_URI="https://github.com/stephencelis/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
