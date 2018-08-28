@@ -4,7 +4,6 @@
 EAPI=6
 
 USE_RUBY="ruby21 ruby22 ruby23"
-
 inherit ruby-fakegem
 
 DESCRIPTION="Create and manage tmux sessions easily."
