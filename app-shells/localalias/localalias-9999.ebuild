@@ -20,3 +20,16 @@ src_install() {
 	cd "${P}"
 	python setup.py install --prefix=/usr --root="${D}"
 }
+
+pkg_preinst() {
+	user="$(who | awk '{print $1}')"
+
+	dodir "/home/$user/.config/localalias"
+	insinto "/home/$user/.config/localalias"
+	doins "${S}/build/lib/scripts/zsh/localalias.zsh"
+
+	if [ -d /home/$user/.oh-my-zsh ]; then
+		dodir "/home/$user/.oh-my-zsh/custom/plugins/localalias"
+		dosym "/home/$user/.config/localalias/localalias.zsh" "/home/$user/.oh-my-zsh/custom/plugins/localalias/localalias.zsh"
+	fi
+}
