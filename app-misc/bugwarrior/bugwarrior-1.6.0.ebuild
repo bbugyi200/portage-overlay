@@ -25,5 +25,6 @@ dev-python/jinja
 >=dev-python/lockfile-0.9.1
 dev-python/click
 !=dev-python/future-0.16.0
+dev-python/future
 "
 RDEPEND="${DEPEND}"
