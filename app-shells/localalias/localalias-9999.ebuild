@@ -24,6 +24,7 @@ src_install() {
 pkg_preinst() {
 	user="$(getent passwd $EUID | awk -F: '{print $1}')"
 
+	echo "USER:: $user"
 	dodir "/home/$user/.config/localalias"
 	insinto "/home/$user/.config/localalias"
 	doins "${S}/build/lib/scripts/zsh/localalias.zsh"
