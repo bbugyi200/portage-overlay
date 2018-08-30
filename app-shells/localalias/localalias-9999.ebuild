@@ -37,5 +37,7 @@ pkg_preinst() {
 			dodir "/home/$user/.oh-my-zsh/custom/plugins/localalias"
 			dosym "/home/$user/.config/localalias/localalias.zsh" "/home/$user/.oh-my-zsh/custom/plugins/localalias/localalias.zsh"
 		fi
+	else
+		die "User cannot be root!"
 	fi
 }
