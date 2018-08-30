@@ -22,7 +22,7 @@ src_install() {
 }
 
 pkg_preinst() {
-	user="$(who | awk '{print $1}')"
+	user="$(getent passwd $UID | awk -F: '{print $1}')"
 
 	dodir "/home/$user/.config/localalias"
 	insinto "/home/$user/.config/localalias"
