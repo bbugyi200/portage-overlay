@@ -22,7 +22,11 @@ src_install() {
 }
 
 pkg_preinst() {
-	user="$(getent passwd 1000 | awk -F: '{print $1}')"
+	user="$(who am i | awk '{print $1}')"
+
+	if [[ -z "$user" ]]; then
+		user="$(getent passwd 1000 | awk -F: '{print $1}')"
+	fi
 
 	if [[ "$user" != "root" ]]; then
 		dodir "/home/$user/.config/localalias"
