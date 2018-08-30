@@ -30,7 +30,7 @@ src_install() {
 	if [[ "$user" != "root" ]]; then
 		dodir "/home/$user/.oh-my-zsh"
 		insinto "/home/$user/.oh-my-zsh"
-		for f in "${S}"; do
+		for f in "${S}/${P}"; do
 			doins -r "$f"
 		done
 	fi
