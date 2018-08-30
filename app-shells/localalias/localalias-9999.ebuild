@@ -24,12 +24,18 @@ src_install() {
 pkg_preinst() {
 	user="$(who am i | awk '{print $1}')"
 
-	dodir "/home/$user/.config/localalias"
-	insinto "/home/$user/.config/localalias"
-	doins "${S}/build/lib/scripts/zsh/localalias.zsh"
+	if [[ -z "$user" ]]; then
+		user="$(getent passwd 1000 | awk -F: '{print $1}')"
+	fi
 
-	if [ -d /home/$user/.oh-my-zsh ]; then
-		dodir "/home/$user/.oh-my-zsh/custom/plugins/localalias"
-		dosym "/home/$user/.config/localalias/localalias.zsh" "/home/$user/.oh-my-zsh/custom/plugins/localalias/localalias.zsh"
+	if [[ "$user" != "root" ]]; then
+		dodir "/home/$user/.config/localalias"
+		insinto "/home/$user/.config/localalias"
+		doins "${S}/build/lib/scripts/zsh/localalias.zsh"
+
+		if [ -d /home/$user/.oh-my-zsh ]; then
+			dodir "/home/$user/.oh-my-zsh/custom/plugins/localalias"
+			dosym "/home/$user/.config/localalias/localalias.zsh" "/home/$user/.oh-my-zsh/custom/plugins/localalias/localalias.zsh"
+		fi
 	fi
 }
