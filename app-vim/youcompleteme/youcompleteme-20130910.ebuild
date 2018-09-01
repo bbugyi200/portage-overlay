@@ -46,6 +46,7 @@ src_prepare() {
 }
 
 src_configure() {
+	export LD_LIBRARY_PATH=/usr/lib64/llvm/6/lib64/
 	local mycmakeargs=(
 		$(cmake-utils_use_use clang CLANG_COMPLETER)
 		$(cmake-utils_use_use clang SYSTEM_LIBCLANG)
