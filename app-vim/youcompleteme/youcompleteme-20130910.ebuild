@@ -66,6 +66,18 @@ src_install() {
 	python_fix_shebang "${ED}"
 }
 
+src_test() {
+	# TODO: use system gtest
+	cd "${S}"/cpp || die
+	emake ycm_core_tests
+	cd ycm/tests || die
+	LD_LIBRARY_PATH="${EROOT}"/usr/$(get_libdir)/llvm \
+		"${S}"/cpp/ycm/tests/ycm_core_tests || die
+
+	cd "${S}"/python/ycm || die
+	nosetests --verbose || die
+}
+
 pkg_postinst() {
 	vim-plugin_pkg_postinst
 
