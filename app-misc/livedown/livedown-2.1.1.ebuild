@@ -11,6 +11,10 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
+DEPEND="
+net-libs/nodejs
+"
+
 src_install() {
 	local npmdir=/usr/lib64/node_modules
 	dodir "$npmdir"
