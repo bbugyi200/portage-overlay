@@ -11,6 +11,7 @@ DESCRIPTION="vim plugin: The ultimate snippet solution for Vim."
 HOME="https://github.com/SirVer/ultisnips"
 EGIT_REPO_URI="https://github.com/SirVer/ultisnips"
 
+
 src_compile() {
     :
 }
