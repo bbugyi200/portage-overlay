@@ -8,7 +8,7 @@ inherit vim-plugin
 
 DESCRIPTION="vim plugin: "
 HOMEPAGE="https://github.com/Shougo/deoplete.nvim"
-SRC_URI="https://github.com/Shougo/${PN}.nvim/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/Shougo/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
