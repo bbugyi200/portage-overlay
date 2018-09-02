@@ -14,3 +14,7 @@ EGIT_REPO_URI="https://github.com/Rip-Rip/clang_complete"
 DEPEND="
 sys-devel/clang
 "
+
+src_compile() {
+	:
+}
