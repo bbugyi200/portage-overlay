@@ -10,3 +10,7 @@ DESCRIPTION="Live Markdown previews for your favorite editor."
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+
+src_install() {
+	npm_src_install
+}
