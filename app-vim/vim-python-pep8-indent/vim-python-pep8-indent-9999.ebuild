@@ -10,3 +10,7 @@ inherit git-r3
 DESCRIPTION="vim plugin: A nicer Python indentation style for vim."
 HOME="https://github.com/Vimjas/vim-python-pep8-indent"
 EGIT_REPO_URI="https://github.com/Vimjas/vim-python-pep8-indent"
+
+src_compile() {
+	:
+}
