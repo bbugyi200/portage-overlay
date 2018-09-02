@@ -13,6 +13,6 @@ SRC_URI="https://github.com/eagletmt/${PN}/archive/v${PV}.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="
-app-misc/ghc-mod
+app-emacs/ghc-mod
 app-vim/vimproc
 "
