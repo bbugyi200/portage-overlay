@@ -5,10 +5,11 @@ EAPI=6
 
 #VIM_PLUGIN_VIM_VERSION="7.0"
 inherit vim-plugin
+inherit git-r3
 
 DESCRIPTION="vim plugin: "
 HOMEPAGE="https://github.com/Shougo/deoplete.nvim"
-SRC_URI="https://github.com/Shougo/${PN}/archive/${PV}.tar.gz"
+EGIT_REPO_URI="https://github.com/Shougo/deoplete.nvim"
 
 LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
