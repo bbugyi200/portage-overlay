@@ -10,3 +10,7 @@ DESCRIPTION="vim plugin: Search local vimrc files (".lvimrc") in the tree (root 
 HOMEPAGE="https://github.com/embear/vim-localvimrc"
 SRC_URI="https://github.com/embear/${PN}/archive/v${PV}.tar.gz"
 KEYWORDS="~amd64 ~x86"
+
+src_compile() {
+	:
+}
