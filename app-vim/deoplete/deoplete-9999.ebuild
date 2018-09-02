@@ -20,3 +20,7 @@ app-vim/nvim-yarp
 app-vim/vim-hug-neovim-rpc
 dev-python/neovim-python-client
 "
+
+src_compile() {
+	:
+}
