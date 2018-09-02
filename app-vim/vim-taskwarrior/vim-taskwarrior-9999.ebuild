@@ -10,3 +10,7 @@ inherit git-r3
 DESCRIPTION="vim plugin: a vim interface for taskwarrior"
 HOMEPAGE="https://github.com/blindFS/vim-taskwarrior"
 EGIT_REPO_URI="https://github.com/blindFS/vim-taskwarrior"
+
+DEPEND="
+app-misc/task
+"
