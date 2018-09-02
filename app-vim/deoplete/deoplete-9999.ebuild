@@ -7,7 +7,7 @@ EAPI=6
 inherit vim-plugin
 inherit git-r3
 
-DESCRIPTION="vim plugin: "
+DESCRIPTION="vim plugin: Dark powered asynchronous completion framework for neovim/Vim8"
 HOMEPAGE="https://github.com/Shougo/deoplete.nvim"
 EGIT_REPO_URI="https://github.com/Shougo/deoplete.nvim"
 
