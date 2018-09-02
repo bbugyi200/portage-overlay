@@ -12,6 +12,5 @@ SRC_URI="https://github.com/dyng/${PN}.vim/archive/v${PV}.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="
-sys-apps/ack
-sys-apps/the_silver_searcher
+|| ( sys-apps/ack sys-apps/the_silver_searcher )
 "
