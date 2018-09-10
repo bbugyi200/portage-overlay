@@ -48,9 +48,7 @@ src_compile() {
 
 src_install() {
 	cd "${FILTER_DIR}"
-	default
-
-	dosym "/usr/lib64/cups/filter/epson_inkjet_printer_filter" "/opt/epson-inkjet-printer-201212w/cups/lib/filter/epson_inkjet_printer_filter"
+	emake DESTDIR="${D}" install
 
 	insinto /etc/cups/ppd
 	for ppd in "${PPD_DIR}"/*; do
