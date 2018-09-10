@@ -23,3 +23,7 @@ src_unpack() {
         unpack ${A}
         unpack ./data.tar.gz
 }
+
+src_install() {
+	emake install
+}
