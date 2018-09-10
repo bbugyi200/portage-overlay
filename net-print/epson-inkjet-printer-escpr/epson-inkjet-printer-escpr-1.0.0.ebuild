@@ -50,6 +50,8 @@ src_install() {
 	cd "${FILTER_DIR}"
 	emake DESTDIR="${D}" install
 
+	dosym "/usr/lib64/cups/filter/epson_inkjet_printer_filter" "/opt/epson-inkjet-printer-201212w/cups/lib/filter/epson_inkjet_printer_filter"
+
 	OPT_DIR=/opt/epson-inkjet-printer-201212w
 	for DIR in ppds lib64 resource watermark; do
 		dodir "${OPT_DIR}/${DIR}"
