@@ -65,7 +65,6 @@ src_install() {
 	dodir "${OPT_FILTER_DIR}"
 
 	FILTER_EXE="${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
-	chmod +x "${FILTER_EXE}"
-	insinto "${OPT_FILTER_DIR}"
-	doins "${FILTER_EXE}"
+	exeinto "${OPT_FILTER_DIR}"
+	doexe "${FILTER_EXE}"
 }
