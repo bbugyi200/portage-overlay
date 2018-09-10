@@ -6,7 +6,7 @@ EAPI=6
 
 inherit rpm
 
-_P="${P}"-201212w-"${PV}"
+_P="${PN}"-201212w-"${PV}"
 _PN="${PN}"-201212w
 
 DESCRIPTION="Printer Driver  ESC/P Driver"
