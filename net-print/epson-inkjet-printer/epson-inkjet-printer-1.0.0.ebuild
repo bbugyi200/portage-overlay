@@ -17,7 +17,6 @@ RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 DEPEND="
 net-print/cups
@@ -36,6 +35,7 @@ src_configure() {
 	libtoolize --force  
 
 	chmod +x configure
+	# Use --enable-debug to send debug messages to /tmp/epson_inkjet_printer_filter.txt
 	econf --disable-shared --enable-debug LDFLAGS="$LDFLAGS -Wl,--no-as-needed" --prefix=/opt/"${_PN}"
 }
 
@@ -50,9 +50,9 @@ src_install() {
 	OPT_DIR=/opt/"${_PN}"
 	dodir "${OPT_DIR}"
 
-	cp -a --no-preserve=mode lib64 "${D}"/opt/"${_PN}"
-	cp -a --no-preserve=mode resource "${D}"/opt/"${_PN}"
-	cp -a --no-preserve=mode watermark "${D}"/opt/"${_PN}"
+	cp -a --no-preserve=mode lib64 "${D}"/"${OPT_DIR}"
+	cp -a --no-preserve=mode resource "${D}"/"${OPT_DIR}"
+	cp -a --no-preserve=mode watermark "${D}"/"${OPT_DIR}"
 
 	PPD_DIR=/usr/share/cups/model/"${_PN}"
 	dodir "${PPD_DIR}"
@@ -64,7 +64,8 @@ src_install() {
 	OPT_FILTER_DIR=/opt/"${_PN}"/cups/lib/filter
 	dodir "${OPT_FILTER_DIR}"
 
-	chmod +x "${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
+	FILTER_EXE="${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
+	chmod +x "${FILTER_EXE}"
 	insinto "${OPT_FILTER_DIR}"
-	doins "${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
+	doins "${FILTER_EXE}"
 }

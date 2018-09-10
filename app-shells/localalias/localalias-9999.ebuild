@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://github.com/bbugyi200/localalias"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
 
 DEPEND="dev-python/pygments"
 RDEPEND="${DEPEND}"
