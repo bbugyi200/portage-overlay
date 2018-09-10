@@ -27,6 +27,17 @@ src_unpack() {
         rm control.tar.gz data.tar.gz debian-binary 
 }
 
+src_configure() {
+	econf --disable-shared
+
+	# Makefile calls ls to generate a file list which is included in Makefile.am
+	# Set the collation to C to avoid automake being called automatically
+	unset LC_ALL
+	export LC_COLLATE=C
+}
+
 src_install() {
-        cp -pPR * "${D}"/ || die "installing data failed"
+	emake -C ppd DESTDIR="${D}" install
+	emake -C src DESTDIR="${D}" install
+	einstalldocs
 }
