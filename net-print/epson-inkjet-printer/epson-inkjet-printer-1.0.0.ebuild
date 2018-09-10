@@ -19,7 +19,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="
+net-print/cups
+app-text/ghostscript-gpl
+"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
@@ -60,6 +63,8 @@ src_install() {
 
 	OPT_FILTER_DIR=/opt/"${_PN}"/cups/lib/filter
 	dodir "${OPT_FILTER_DIR}"
+
+	chmod +x "${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
 	insinto "${OPT_FILTER_DIR}"
 	doins "${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
 }
