@@ -32,7 +32,7 @@ src_configure() {
 	autoconf  
 
 	chmod +x configure
-	econf --disable-shared
+	econf --prefix=/usr --with-cupsfilterdir=/usr/lib/cups/filter --with-cupsppddir=/usr/share/ppd
 
 	# Makefile calls ls to generate a file list which is included in Makefile.am
 	# Set the collation to C to avoid automake being called automatically
