@@ -32,7 +32,7 @@ src_configure() {
 	autoconf  
 
 	chmod +x configure
-	econf 
+	econf --disable-shared
 
 	# Makefile calls ls to generate a file list which is included in Makefile.am
 	# Set the collation to C to avoid automake being called automatically
@@ -49,8 +49,6 @@ src_compile() {
 src_install() {
 	cd "${FILTER_DIR}"
 	default
-
-	dosym "/usr/lib64/cups/filter/epson_inkjet_printer_filter" "/opt/epson-inkjet-printer-201212w/cups/lib/filter/epson_inkjet_printer_filter"
 
 	insinto /usr/share/ppd
 	for ppd in "${PPD_DIR}"/*; do
