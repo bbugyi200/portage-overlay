@@ -52,7 +52,7 @@ src_install() {
 
 	dosym "/usr/lib64/cups/filter/epson_inkjet_printer_filter" "/opt/epson-inkjet-printer-201212w/cups/lib/filter/epson_inkjet_printer_filter"
 
-	insinto /usr/share/ppd
+	insinto /etc/cups/ppd
 	for ppd in "${PPD_DIR}"/*; do
 		doins "${ppd}"
 	done
