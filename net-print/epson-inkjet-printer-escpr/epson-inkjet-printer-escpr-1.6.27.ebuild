@@ -15,12 +15,8 @@ IUSE=""
 DEPEND="net-print/cups"
 RDEPEND="${DEPEND}"
 
-PATCHES=(
-	"${FILESDIR}/1.6.5-warnings.patch"
-)
-
 src_configure() {
-	econf --disable-shared
+	econf
 
 	# Makefile calls ls to generate a file list which is included in Makefile.am
 	# Set the collation to C to avoid automake being called automatically
