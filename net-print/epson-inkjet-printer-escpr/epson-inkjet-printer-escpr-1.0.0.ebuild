@@ -21,7 +21,7 @@ RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
 FILTER_DIR="${S}/epson-inkjet-printer-filter-1.0.0"
-PPD_DIR="${S}/epson-inkjet-printer-201212w-1.0.0/ppds"
+DRIVER_DIR="${S}/epson-inkjet-printer-201212w-1.0.0"
 
 src_configure() {
 	cd "${FILTER_DIR}"
@@ -32,7 +32,7 @@ src_configure() {
 	autoconf  
 
 	chmod +x configure
-	econf --prefix=/usr --with-cupsfilterdir=/usr/lib/cups/filter --with-cupsppddir=/usr/share/ppd
+	econf --prefix=/usr --with-cupsfilterdir=/opt/epson-inkjet-printer-201212w/cups/lib/filter --with-cupsppddir=/opt/epson-inkjet-printer-201212w/ppds
 
 	# Makefile calls ls to generate a file list which is included in Makefile.am
 	# Set the collation to C to avoid automake being called automatically
@@ -50,8 +50,12 @@ src_install() {
 	cd "${FILTER_DIR}"
 	emake DESTDIR="${D}" install
 
-	insinto /etc/cups/ppd
-	for ppd in "${PPD_DIR}"/*; do
-		doins "${ppd}"
+	OPT_DIR=/opt/epson-inkjet-printer-201212w
+	for DIR in ppds lib64 resource watermark; do
+		dodir "${OPT_DIR}/${DIR}"
+		insinto "${OPT_DIR}/${DIR}"
+		for FILE in "${DRIVER_DIR}"/"${DIR}"/*; do
+			doins "${FILE}"
+		done
 	done
 }
