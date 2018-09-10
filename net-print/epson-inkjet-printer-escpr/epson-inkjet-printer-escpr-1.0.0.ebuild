@@ -19,10 +19,13 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
-SRC_DIR="epson-inkjet-printer-filter-1.0.0"
-S="${WORKDIR}/${SRC_DIR}"
+S="${WORKDIR}"
+FILTER_DIR="${S}/epson-inkjet-printer-filter-1.0.0"
+PPD_DIR="${S}/epson-inkjet-printer-201212w-1.0.0/ppds"
 
 src_configure() {
+	cd "${FILTER_DIR}"
+
 	aclocal  
 	libtoolize --force  
 	autoheader  
@@ -38,6 +41,17 @@ src_configure() {
 }
 
 src_compile() {
+	cd "${FILTER_DIR}"
 	automake --add-missing
 	emake
+}
+
+src_install() {
+	cd "${FILTER_DIR}"
+	default
+
+	insinto /usr/share/ppd
+	for ppd in "${PPD_DIR}"/*; do
+		doins "${ppd}"
+	done
 }
