@@ -22,11 +22,4 @@ S="${WORKDIR}"
 src_unpack() {
         unpack ${A}
         unpack ./data.tar.gz
-
-        # removing not necessary content
-        rm control.tar.gz data.tar.gz debian-binary 
-}
-
-src_install() {
-        cp -pPR * "${D}"/ || die "installing data failed"
 }
