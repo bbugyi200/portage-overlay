@@ -15,6 +15,10 @@ IUSE=""
 DEPEND="net-print/cups"
 RDEPEND="${DEPEND}"
 
+PATCHES=(
+	"${FILESDIR}/1.6.5-warnings.patch"
+)
+
 src_configure() {
 	econf --disable-shared
 
