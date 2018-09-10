@@ -33,7 +33,7 @@ src_configure() {
 	libtoolize --force  
 
 	chmod +x configure
-	econf LDFLAGS="$LDFLAGS -Wl,--no-as-needed" --prefix=/opt/"${PN}"
+	econf --disable-shared LDFLAGS="$LDFLAGS -Wl,--no-as-needed" --prefix=/opt/"${PN}"
 }
 
 src_compile() {
