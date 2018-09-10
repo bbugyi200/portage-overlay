@@ -28,8 +28,6 @@ src_unpack() {
 }
 
 src_configure() {
-	econf --disable-shared
-
 	# Makefile calls ls to generate a file list which is included in Makefile.am
 	# Set the collation to C to avoid automake being called automatically
 	unset LC_ALL
