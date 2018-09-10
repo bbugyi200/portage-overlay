@@ -16,7 +16,7 @@ DEPEND="net-print/cups"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	econf
+	econf --disable-shared
 
 	# Makefile calls ls to generate a file list which is included in Makefile.am
 	# Set the collation to C to avoid automake being called automatically
