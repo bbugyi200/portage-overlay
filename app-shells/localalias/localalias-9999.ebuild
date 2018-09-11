@@ -19,16 +19,3 @@ src_install() {
 	cd "${P}"
 	python setup.py install --prefix=/usr --root="${D}"
 }
-
-pkg_preinst() {
-	user="$(who am i | awk '{print $1}')"
-
-	if [[ -z "$user" ]] || [[ "$user" == "root" ]]; then
-		user="$(getent passwd 1000 | awk -F: '{print $1}')"
-	fi
-
-	DATA_DIR=/home/"$user"/.local/share/localalias
-	dodir "$DATA_DIR"
-	insinto "$DATA_DIR"
-	doins "${S}/build/lib/scripts/zsh/localalias.zsh"
-}

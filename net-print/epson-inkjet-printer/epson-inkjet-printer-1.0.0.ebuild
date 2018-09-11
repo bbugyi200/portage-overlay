@@ -63,8 +63,6 @@ src_install() {
 
 	OPT_FILTER_DIR=/opt/"${_PN}"/cups/lib/filter
 	dodir "${OPT_FILTER_DIR}"
-
-	FILTER_EXE="${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
 	exeinto "${OPT_FILTER_DIR}"
-	doexe "${FILTER_EXE}"
+	doexe "${FILTER_SRC_DIR}"/src/epson_inkjet_printer_filter
 }
