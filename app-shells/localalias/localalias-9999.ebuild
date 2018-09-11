@@ -14,8 +14,3 @@ SLOT="0"
 
 DEPEND="dev-python/pygments"
 RDEPEND="${DEPEND}"
-
-src_install() {
-	cd "${P}"
-	python setup.py install --prefix=/usr --root="${D}"
-}
