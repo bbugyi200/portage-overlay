@@ -3,9 +3,6 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
-inherit distutils-r1
-
 DESCRIPTION="localalias is a light-weight shell wrapper that allows you to create per-directoy command aliases."
 HOMEPAGE="https://github.com/bbugyi200/localalias"
 SRC_URI="https://github.com/bbugyi200/${PN}/archive/v${PV}.tar.gz"
@@ -16,3 +13,8 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="dev-python/pygments"
 RDEPEND="${DEPEND}"
+
+src_install() {
+	cd "${P}"
+	python setup.py install --prefix=/usr --root="${D}"
+}
