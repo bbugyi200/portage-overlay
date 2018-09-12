@@ -13,7 +13,9 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="
 >=dev-python/click-5.0
+dev-python/colorama
 >=dev-python/pyyaml-3.11
+dev-python/termcolor
 "
 RDEPEND="${DEPEND}"
 
