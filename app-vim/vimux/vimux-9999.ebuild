@@ -10,3 +10,7 @@ inherit git-r3
 DESCRIPTION="vim plugin: "
 HOME="https://github.com/benmills/vimux"
 EGIT_REPO_URI="https://github.com/benmills/vimux"
+
+DEPEND="
+app-misc/tmux
+"
