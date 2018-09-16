@@ -49,9 +49,9 @@ weechat_src_install() {
 	esac
 
 	INST_DIR="$WEECHAT_DIR/$WEECHAT_FILETYPE"
-	SCRIPT="${S}/$WEECHAT_FILETYPE/$MY_PN.$EXT"
+	SCRIPT="$MY_PN.$EXT"
 
 	insinto "$INST_DIR"
-	doins "$SCRIPT"
-	dosym "$SCRIPT" "$INST_DIR/autoload/$MY_PN.$EXT"
+	doins "${S}/$WEECHAT_FILETYPE/$SCRIPT"
+	dosym "$INST_DIR/$SCRIPT" "$INST_DIR/autoload/$MY_PN.$EXT"
 }
