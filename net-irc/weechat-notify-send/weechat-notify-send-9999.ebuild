@@ -11,6 +11,9 @@ EGIT_REPO_URI="https://github.com/s3rvac/weechat-notify-send"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+DEPENDS="
+net-irc/weechat
+"
 
 src_install() {
 	user="$(who am i | awk '{print $1}')"
