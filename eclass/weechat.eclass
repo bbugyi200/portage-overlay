@@ -12,8 +12,13 @@
 
 inherit git-r3
 
-HOME="https://github.com/weechat/scripts"
-EGIT_REPO_URI="https://github.com/weechat/scripts"
+if [[ -n "$WEECHAT_GITREPO" ]]; then
+	HOME="$WEECHAT_GITREPO"
+	EGIT_REPO_URI="$WEECHAT_GITREPO"
+else
+	HOME="https://github.com/weechat/scripts"
+	EGIT_REPO_URI="https://github.com/weechat/scripts"
+fi
 
 DEPEND="
 net-irc/weechat
@@ -52,6 +57,12 @@ weechat_src_install() {
 	SCRIPT="$MY_PN.$EXT"
 
 	insinto "$INST_DIR"
-	doins "${S}/$WEECHAT_FILETYPE/$SCRIPT"
+
+	if [[ -n "$WEECHAT_GITREPO" ]]; then
+		doins "${S}/$SCRIPT"
+	else
+		doins "${S}/$WEECHAT_FILETYPE/$SCRIPT"
+	fi
+
 	dosym "$INST_DIR/$SCRIPT" "$INST_DIR/autoload/$MY_PN.$EXT"
 }
