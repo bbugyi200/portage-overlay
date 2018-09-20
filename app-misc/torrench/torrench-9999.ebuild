@@ -10,3 +10,6 @@ inherit git-r3
 DESCRIPTION="Command-line torrent search program"
 HOME="https://github.com/kryptxy/torrench"
 EGIT_REPO_URI="https://github.com/kryptxy/torrench"
+
+SLOT="0"
+KEYWORDS="~amd64 ~x86"
