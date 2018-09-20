@@ -13,3 +13,12 @@ EGIT_REPO_URI="https://github.com/kryptxy/torrench"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+
+DEPEND="
+dev-python/requests
+dev-python/beautifulsoup
+dev-python/colorama
+dev-python/lxml
+dev-python/pyperclip
+dev-python/tabulate
+"
