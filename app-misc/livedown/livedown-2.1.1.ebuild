@@ -15,8 +15,6 @@ DEPEND="
 net-libs/nodejs
 "
 
-src_install() {
-	local npmdir=/usr/lib64/node_modules
-	dodir "$npmdir"
+src_prepare() {
 	npm install -g --prefix "${D}/usr" "${PN}"@"${PV}"
 }
