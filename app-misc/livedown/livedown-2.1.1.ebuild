@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=5
 
 inherit npm
 
@@ -26,6 +26,6 @@ dev-nodejs/socketio
 "
 
 src_install() {
-	node-module_src_install
-	install_node_module_binary "bin/livedown" "/usr/bin/livedown"
+	npm_src_install
+	dobin "${S}"/bin/"${PN}"
 }
