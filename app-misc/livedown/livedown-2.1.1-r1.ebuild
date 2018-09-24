@@ -4,6 +4,8 @@
 EAPI=5
 
 DESCRIPTION="Live Markdown previews for your favorite editor."
+HOME="https://github.com/shime/livedown"
+SRC_URI="https://github.com/shime/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
