@@ -18,5 +18,5 @@ net-libs/nodejs
 RDEPEND="${DEPEND}"
 
 src_install() {
-	npm install
+	npm install --prefix "${D}"
 }
