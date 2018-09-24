@@ -3,6 +3,7 @@
 
 EAPI=7
 
+NODE_MODULE_NAME="socket.io"
 inherit node-module
 
 DESCRIPTION=""
