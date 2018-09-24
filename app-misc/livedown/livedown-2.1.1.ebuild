@@ -22,7 +22,7 @@ dev-nodejs/markdown-it-task-checkbox
 dev-nodejs/minimist
 dev-nodejs/opn
 dev-nodejs/request
-dev-nodejs/socketio
+dev-nodejs/socket.io-2.0.3
 "
 
 src_install() {
