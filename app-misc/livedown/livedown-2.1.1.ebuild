@@ -1,26 +1,22 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
-
-inherit npm
+EAPI=6
 
 DESCRIPTION="Live Markdown previews for your favorite editor."
+HOME="https://github.com/shime/livedown"
+SRC_URI="https://github.com/shime/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="
-dev-nodejs/body-parser
-dev-nodejs/chokidar
-dev-nodejs/express
-dev-nodejs/markdown-it
-dev-nodejs/markdown-it-emoji
-dev-nodejs/markdown-it-github-headings
-dev-nodejs/markdown-it-task-checkbox
-dev-nodejs/minimist
-dev-nodejs/opn
-dev-nodejs/request
-dev-nodejs/socketio
+net-libs/nodejs
 "
+
+src_install() {
+	local npmdir=/usr/lib64/node_modules
+	dodir "$npmdir"
+	npm install -g --prefix "${D}/usr" "${PN}"@"${PV}"
+}
