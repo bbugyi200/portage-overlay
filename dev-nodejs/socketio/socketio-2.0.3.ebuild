@@ -1,10 +1,10 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=5
 
-NODE_MODULE_NAME="socket.io"
-inherit node-module
+NPM_MODULE="socket.io"
+inherit npm
 
 DESCRIPTION=""
 

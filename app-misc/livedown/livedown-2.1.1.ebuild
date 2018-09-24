@@ -3,20 +3,7 @@
 
 EAPI=7
 
-inherit node-module
-
-NODE_MODULE_DEPEND="body-parser:1.9.2
-chokidar:1.6.1
-express:4.10.2
-markdown-it:8.3.1
-markdown-it-emoji:1.4.0
-markdown-it-github-headings:1.0.1
-markdown-it-task-checkbox:1.0.4
-minimist:1.1.0
-opn:5.1.0
-request:2.48.0
-socket.io:2.0.3
-"
+inherit npm
 
 DESCRIPTION="Live Markdown previews for your favorite editor."
 

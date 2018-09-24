@@ -1,1 +1,1 @@
-{"f": "mkdir \"$1\"\ncp body-parser/body-parser-1.9.2.ebuild \"$1\"/\"$1\"-\"$2\".ebuild"}
+{"f": "sed -i 's/EAPI=7/EAPI=5/' \"$1\"\nsed -i 's/inherit node-module/inherit npm/' \"$1\""}
