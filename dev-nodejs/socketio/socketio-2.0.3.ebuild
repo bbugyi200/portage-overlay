@@ -10,3 +10,6 @@ DESCRIPTION=""
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+
+PN="socket.io"
+P="socket.io-2.03"
