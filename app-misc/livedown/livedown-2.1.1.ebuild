@@ -24,8 +24,3 @@ dev-nodejs/opn
 dev-nodejs/request
 dev-nodejs/socketio
 "
-
-src_install() {
-	npm_src_install
-	dobin "${S}"/bin/"${PN}"
-}
