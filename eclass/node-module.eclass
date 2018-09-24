@@ -72,25 +72,8 @@ SRC_URI="http://registry.npmjs.org/${NODE_MODULE_NAME}/-/${NODE_MODULE_NAME}-${P
 SLOT="${PV}"
 S="${WORKDIR}/package"
 
-DEPEND=""
-IUSE=""
-if [ -z ${NODEJS_MIN_VERSION} ]; then
-	RDEPEND="net-libs/nodejs"
-else
-	RDEPEND=">=net-libs/nodejs-${NODEJS_MIN_VERSION}"
-fi
-for pkg in ${NODE_MODULE_DEPEND}; do
-	RDEPEND="${RDEPEND} dev-nodejs/${pkg}"
-done
-
-if [ ! -z ${NODE_MODULE_HAS_TEST} ]; then
-	IUSE="test"
-	DEPEND="test? ( ${RDEPEND}"
-	for pkg in ${NODE_MODULE_TEST_DEPEND}; do
-		DEPEND="${DEPEND} dev-nodejs/${pkg}"
-	done
-	DEPEND="${DEPEND} )"
-fi
+DEPEND="${DEPEND} net-libs/nodejs"
+RDEPEND="${DEPEND}"
 
 if [ ${EAPI:-0} == 5 ]; then
 	node-module_src_prepare() {
