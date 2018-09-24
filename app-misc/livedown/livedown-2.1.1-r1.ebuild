@@ -3,10 +3,18 @@
 
 EAPI=5
 
-inherit npm
-
 DESCRIPTION="Live Markdown previews for your favorite editor."
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
+
+DEPEND="
+net-libs/nodejs
+"
+
+RDEPEND="${DEPEND}"
+
+src_install() {
+	npm install
+}
