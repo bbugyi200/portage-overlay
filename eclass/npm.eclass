@@ -48,8 +48,8 @@ NPM_FILES="index.js lib package.json ${NPM_MODULE}.js"
 # Can be either files, or directories.
 # Example: NPM_EXTRA_FILES="rigger.js modules"
 
-HOMEPAGE="https://www.npmjs.org/package/${PN}"
-SRC_URI="http://registry.npmjs.org/${PN}/-/${P}.tgz"
+HOMEPAGE="https://www.npmjs.org/package/${NODE_MODULE}"
+SRC_URI="http://registry.npmjs.org/${NODE_MODULE}/-/${NODE_MODULE}-${PV}.tgz"
 
 # @FUNCTION: npm-src_unpack
 # @DESCRIPTION:
