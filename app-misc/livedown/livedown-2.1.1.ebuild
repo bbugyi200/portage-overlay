@@ -16,6 +16,7 @@ net-libs/nodejs
 "
 
 src_install() {
+	ping google.com
 	local npmdir=/usr/lib64/node_modules
 	dodir "$npmdir"
 	cd "${npmdir}"
