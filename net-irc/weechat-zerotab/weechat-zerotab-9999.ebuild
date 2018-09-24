@@ -4,7 +4,6 @@
 EAPI=7
 
 WEECHAT_FILETYPE=python
-WEECHAT_GITREPO="https://github.com/s3rvac/weechat-notify-send"
 
 inherit weechat
 
