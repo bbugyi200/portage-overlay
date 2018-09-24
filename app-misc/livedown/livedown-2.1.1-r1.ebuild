@@ -18,7 +18,7 @@ net-libs/nodejs
 RDEPEND="${DEPEND}"
 
 src_install() {
-	local npmdir=/usr/lib64/node_modules
-	dodir "$npmdir"
+	# local npmdir=/usr/lib64/node_modules
+	# dodir "$npmdir"
 	npm install -g --prefix "${D}/usr" "${PN}"@"${PV}"
 }
