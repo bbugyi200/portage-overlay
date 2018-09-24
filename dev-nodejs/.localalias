@@ -1,0 +1,1 @@
+{"f": "mkdir \"$1\"\ncp body-parser/body-parser-1.9.2.ebuild \"$1\"/\"$1\"-\"$2\".ebuild"}
