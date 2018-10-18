@@ -22,7 +22,14 @@ RDEPEND="${DEPEND}"
 src_install() {
 	cd "${S}"/"${P}"
 
-	mkdir "${D}"/opt/"${PN}"
-	cp -r bin/* "${D}"/opt/"${PN}"
-	dobin bin/anki
+	doman anki.1
+
+	insinto usr/share/pixmaps
+	doins anki.png
+
+	insinto opt/"${PN}"
+	doins bin/*
+
+	fperms +x /opt/"${PN}"/anki
+	dosym /opt/"${PN}"/anki /usr/local/bin/anki
 }
