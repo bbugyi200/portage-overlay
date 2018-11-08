@@ -4,8 +4,8 @@
 EAPI=7
 
 inherit git-r3
-HOME="https://github.com/bbugyi200/rookie-cookiecutter"
-EGIT_REPO_URI="https://github.com/bbugyi200/rookie-cookiecutter"
+HOME="https://github.com/bbugyi200/bashlibs"
+EGIT_REPO_URI="https://github.com/bbugyi200/bashlibs"
 
 LICENSE="MIT"
 SLOT="0"
