@@ -5,7 +5,7 @@ EAPI="6"
 
 DESCRIPTION="Unit-test framework for Bourne-based shell scripts"
 HOMEPAGE="https://github.com/kward/shunit2"
-SRC_URI="https://github.com/kward/${PN}/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/kward/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -22,5 +22,5 @@ src_install() {
 	dodoc doc/*.txt
 
 	docinto html
-	dodoc doc/*.{html,css}
+	dodoc doc/*.html
 }
