@@ -5,14 +5,17 @@ EAPI=6
 
 inherit git-r3
 
-DESCRIPTION="funky is a light-weight shell wrapper that allows you to create per-directoy command aliases."
-HOMEPAGE="https://github.com/bbugyi200/localalias"
-EGIT_REPO_URI="https://github.com/bbugyi200/localalias"
+DESCRIPTION="A python package that allows for simple access to Reddit's API"
+HOMEPAGE="https://github.com/praw-dev/praw"
+EGIT_REPO_URI="https://github.com/praw-dev/praw"
 
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND="dev-python/pygments"
+DEPEND="
+dev-python/prawcore
+dev-python/update_checker
+"
 RDEPEND="${DEPEND}"
 
 src_install() {
