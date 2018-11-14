@@ -10,7 +10,7 @@ EGIT_REPO_URI="https://github.com/bbugyi200/cookie"
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND=""
+DEPEND="app-shells/bashlibs"
 RDEPEND="${DEPEND}"
 
 src_compile() {
