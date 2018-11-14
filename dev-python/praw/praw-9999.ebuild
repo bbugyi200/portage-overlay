@@ -20,5 +20,5 @@ RDEPEND="${DEPEND}"
 
 src_install() {
 	cd "${P}"
-	python2 setup.py install --root="${D}"
+	python setup.py install --root="${D}"
 }
