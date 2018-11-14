@@ -13,10 +13,14 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
+dev-python/pytest-runner
+"
+
+RDEPEND="
+${DEPEND}
 dev-python/prawcore
 dev-python/update_checker
 "
-RDEPEND="${DEPEND}"
 
 src_install() {
 	cd "${P}"
