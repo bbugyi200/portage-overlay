@@ -26,4 +26,5 @@ src_install(){
 	npm install -g --user root --prefix "${D}/usr" "${DISTDIR}/heroku-${PV}.tgz"
 	dosym "/usr/$(get_libdir)/node_modules/heroku/LICENSE" "/usr/share/licenses/${PN}/LICENSE"
 	find "${D}/usr" -type d -exec chmod 755 '{}' +
+	die
 }
