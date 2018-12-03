@@ -48,4 +48,6 @@ src_install() {
 			doins -r "$f"
 		done
 	fi
+
+	emake install DESTDIR="${D}" PREFIX="${install_dir}"
 }
