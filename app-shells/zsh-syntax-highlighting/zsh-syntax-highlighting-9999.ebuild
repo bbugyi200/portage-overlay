@@ -27,8 +27,25 @@ src_prepare() {
 }
 
 src_install() {
-	insinto "/usr/share/zsh/site-contrib/${PN}"
-	doins "${S}/${PN}.plugin.zsh"
+	user="$(who am i | awk '{print $1}')"
+	
+	if [[ -z "$user" ]]; then
+		user="$(getent passwd 1000 | awk -F: '{print $1}')"
+	fi
+	
+	if [[ "$user" != "root" ]]; then
+		home="/home/$user"
+		if [[ -n "$ZSH_CUSTOM" ]]; then
+			zsh_custom="$ZSH_CUSTOM"
+		else
+			zsh_custom="$home/.oh-my-zsh/custom"
+		fi
 
-	emake install DESTDIR="${D}" PREFIX="/usr/share/zsh/site-contrib/"
+		install_dir="$zsh_custom/plugins/${PN}"
+
+		insinto "$install_dir"
+		for f in "${S}"/*; do
+			doins -r "$f"
+		done
+	fi
 }
