@@ -47,7 +47,8 @@ src_install() {
 		for f in "${S}"/*; do
 			doins -r "$f"
 		done
-	fi
 
-	emake install DESTDIR="${D}" PREFIX="${install_dir}"
+		doins .version
+		doins .revision-hash
+	fi
 }
