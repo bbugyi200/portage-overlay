@@ -3,7 +3,7 @@
 
 EAPI=6
 
-USE_RUBY="ruby21 ruby22 ruby23"
+USE_RUBY="ruby21 ruby22 ruby23 ruby24"
 inherit ruby-fakegem
 
 DESCRIPTION="GitHub Issues on the command line. Use your $EDITOR, not your browser."
