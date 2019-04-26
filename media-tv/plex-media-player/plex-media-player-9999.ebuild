@@ -55,4 +55,6 @@ src_configure() {
 	local mycmakeargs=(
 		-DQTROOT=/usr/share/qt5
 	)
+
+	cmake-utils_src_configure
 }
