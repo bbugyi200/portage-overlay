@@ -2,11 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit git-r3 autotools flag-o-matic
+EAPI=6
+
+inherit git-r3
 
 DESCRIPTION="An open-source multi-platform crash reporting system"
 HOMEPAGE="https://chromium.googlesource.com/breakpad/breakpad"
-GIT_REPO_URI="https://chromium.googlesource.com/breakpad/breakpad"
+EGIT_REPO_URI="https://chromium.googlesource.com/breakpad/breakpad"
 
 LICENSE="BSD"
 SLOT="0"
@@ -14,11 +16,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""
-
-src_prepare() {
-	eautoreconf
-	eautomake
-}
 
 src_compile() {
 	append-flags -fPIC 
