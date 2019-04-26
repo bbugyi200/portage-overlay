@@ -26,7 +26,6 @@ CDEPEND='
 	dev-qt/qtxml:5
 	dev-qt/qtx11extras:5
 	>=dev-util/conan-0.24.0
-	dev-util/google-breakpad
 	>=media-video/mpv-0.25.0[libmpv]
 	media-libs/libsdl2
 	media-libs/mesa
