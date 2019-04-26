@@ -5,8 +5,8 @@
 inherit base subversion autotools flag-o-matic
 
 DESCRIPTION="An open-source multi-platform crash reporting system"
-HOMEPAGE="http://code.google.com/p/google-breakpad/"
-ESVN_REPO_URI="http://google-breakpad.googlecode.com/svn/trunk/"
+HOMEPAGE="https://chromium.googlesource.com/breakpad/breakpad"
+GIT_REPO_URI="https://chromium.googlesource.com/breakpad/breakpad"
 
 LICENSE="BSD"
 SLOT="0"
