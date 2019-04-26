@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit base git-r3 autotools flag-o-matic
+inherit git-r3 autotools flag-o-matic
 
 DESCRIPTION="An open-source multi-platform crash reporting system"
 HOMEPAGE="https://chromium.googlesource.com/breakpad/breakpad"
