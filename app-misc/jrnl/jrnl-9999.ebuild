@@ -20,7 +20,7 @@ IUSE="crypt"
 
 DEPEND=">=dev-python/python-dateutil-2.2[${PYTHON_USEDEP}]
 		>=dev-python/six-1.6.1[${PYTHON_USEDEP}]
-		>=dev-python/keyrings_alt-1.3[${PYTHON_USEDEP}]
+		>=dev-python/keyrings_alt-3.1.1[${PYTHON_USEDEP}]
 		>=dev-python/keyring-3.3[${PYTHON_USEDEP}]
 		>=dev-python/parsedatetime-1.4[${PYTHON_USEDEP}]
 		>=dev-python/tzlocal-1.1.2[${PYTHON_USEDEP}]
