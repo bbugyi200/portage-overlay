@@ -56,7 +56,7 @@ DEPEND="dev-libs/boost
 		  webcam?  ( media-libs/opencv:0= )
 		"
 RDEPEND="${DEPEND}
-		app-text/htmltidy"
+		app-text/tidy-html5"
 
 src_prepare() {
 
