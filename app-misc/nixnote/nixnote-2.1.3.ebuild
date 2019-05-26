@@ -83,7 +83,7 @@ src_configure() {
 		fi
 	fi
 	if use qt5; then
-		eqmake5 PREFIX=/usr nixnote2.pro
+		./development/build-with-qmake.sh
 		
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
