@@ -123,7 +123,7 @@ src_compile() {
 src_install() {
 	emake INSTALL_ROOT=${D} install
 
-	dodoc -r changelog.txt license.html shortcuts*.txt theme.ini
+	dodoc -r changelog.txt LICENSE shortcuts.txt themes.ini
 
 	rm -r ${D}/usr/share/nixnote2/translations/*.ts
 	
@@ -136,5 +136,5 @@ src_install() {
 		doins plugins/libwebcamplugin.so
 	fi
 	
-	doman ${S}/man/nixnote2.1
+	doman ${S}/docs/nixnote2.1
 }
