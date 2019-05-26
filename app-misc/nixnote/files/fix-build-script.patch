@@ -1,0 +1,11 @@
+diff --git a/development/build-with-qmake.sh b/development/build-with-qmake.sh
+index b85d07d2..87ff8199 100755
+--- a/development/build-with-qmake.sh
++++ b/development/build-with-qmake.sh
+@@ -76,6 +76,5 @@ echo ${QMAKE_BINARY} CONFIG+=${BUILD_TYPE} PREFIX=appdir/usr QMAKE_RPATHDIR+=${T
+ ${QMAKE_BINARY} CONFIG+=${BUILD_TYPE} PREFIX=appdir/usr QMAKE_RPATHDIR+=${TIDY_LIB_DIR} || error_exit "$0: qmake"
+ 
+ make -j$(nproc) || error_exit "$0: make"
+-make -j$(nproc) install || error_exit "$0: make install"
+ 
+ cp changelog.txt debian/changelog

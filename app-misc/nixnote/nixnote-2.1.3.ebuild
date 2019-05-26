@@ -63,6 +63,7 @@ src_prepare() {
 	QT_SELECT=qt5 lrelease nixnote2.pro || die
 
 	epatch "${FILESDIR}"/tidy-source-dir-location.patch
+	epatch "${FILESDIR}"/fix-build-script.patch
 }
 
 src_configure() {
