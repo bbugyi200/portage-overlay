@@ -102,7 +102,7 @@ src_configure() {
 
 src_compile() {
 	export QT_DEBUG_PLUGINS=1
-	export QT_PLUGIN_PATH=/usr/lib/qt5/plugins
+	export QT_PLUGIN_PATH=/usr/lib64/qt5/plugins
 
 	emake || die "build Nixnote failed"
 
