@@ -22,6 +22,5 @@ ${DEPEND}
 "
 
 src_install() {
-	cd "${P}"
-	python setup.py install --root="${D}"
+	distutils-r1_src_install
 }
