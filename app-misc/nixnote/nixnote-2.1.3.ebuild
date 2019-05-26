@@ -67,9 +67,9 @@ src_prepare() {
 }
 
 src_configure() {
-	if use qt4; then
-		eqmake4 PREFIX=/usr
+	./development/build-with-qmake.sh
 
+	if use qt4; then
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
 			eqmake4 Hunspell.pro
@@ -83,9 +83,8 @@ src_configure() {
 			cd ${S}
 		fi
 	fi
+
 	if use qt5; then
-		./development/build-with-qmake.sh
-		
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
 			eqmake5 Hunspell.pro
