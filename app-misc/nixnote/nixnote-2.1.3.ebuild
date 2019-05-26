@@ -67,7 +67,7 @@ src_prepare() {
 
 src_configure() {
 	if use qt4; then
-		eqmake4 PREFIX=/usr  nixnote2.pro
+		eqmake4 PREFIX=/usr
 
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
@@ -101,6 +101,9 @@ src_configure() {
 }
 
 src_compile() {
+	export QT_DEBUG_PLUGINS=1
+	export QT_PLUGIN_PATH=/usr/lib/qt5/plugins
+
 	emake || die "build Nixnote failed"
 
 	if use hunspell; then
