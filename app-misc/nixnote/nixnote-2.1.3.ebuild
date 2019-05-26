@@ -60,14 +60,14 @@ RDEPEND="${DEPEND}
 
 src_prepare() {
 
-	QT_SELECT=qt5 lupdate -pro NixNote2.pro -no-obsolete || die
-	QT_SELECT=qt5 lrelease NixNote2.pro || die
+	QT_SELECT=qt5 lupdate -pro nixnote2.pro -no-obsolete || die
+	QT_SELECT=qt5 lrelease nixnote2.pro || die
 	
 }
 
 src_configure() {
 	if use qt4; then
-		eqmake4 PREFIX=/usr  NixNote2.pro
+		eqmake4 PREFIX=/usr  nixnote2.pro
 
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
@@ -83,7 +83,7 @@ src_configure() {
 		fi
 	fi
 	if use qt5; then
-		eqmake5 PREFIX=/usr NixNote2.pro
+		eqmake5 PREFIX=/usr nixnote2.pro
 		
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
