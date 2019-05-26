@@ -131,6 +131,7 @@ src_install() {
 		insinto /usr/$(get_libdir)/nixnote2
 		doins plugins/libhunspellplugin.so
 	fi
+
 	if use webcam; then
 		insinto /usr/$(get_libdir)/nixnote2
 		doins plugins/libwebcamplugin.so
