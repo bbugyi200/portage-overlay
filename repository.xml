@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
-    <repo quality="experimental" status="unofficial">
+    <repo priority="25" quality="experimental" status="unofficial">
       <name>bbugyi200</name>
       <description lang="en">Personal overlay of Bryan Bugyi</description>
       <homepage>https://github.com/bbugyi200/portage-overlay</homepage>
