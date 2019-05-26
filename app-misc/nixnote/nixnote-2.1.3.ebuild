@@ -83,7 +83,7 @@ src_configure() {
 		fi
 	fi
 	if use qt5; then
-		./development/build-with-qmake.sh
+		eqmake5 PREFIX=/usr
 		
 		if use hunspell; then
 			cd ${S}/plugins/hunspell
