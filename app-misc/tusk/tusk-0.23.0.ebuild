@@ -38,10 +38,6 @@ src_unpack() {
 src_install() {
 	domenu "${S}/usr/share/applications/tusk.desktop"
 
-# 	for size in 16 24 32 48 64 96 128 256 512; do
-# 		doicon -s ${size} "${S}/usr/share/icons/hicolor/${size}x${size}/apps/tusk.png"
-# 	done
-
 	dodoc usr/share/doc/tusk/changelog.gz
 
 	insinto /
