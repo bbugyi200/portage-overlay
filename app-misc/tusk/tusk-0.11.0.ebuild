@@ -29,25 +29,25 @@ RDEPEND="
 QA_PREBUILT="
 		opt/Tusk/libffmpeg.so
 		opt/Tusk/libnode.so
-		opt/Tusk/tusk-app"
+		opt/Tusk/tusk"
 
 src_unpack() {
 	unpack_deb "${A}"
 }
 
 src_install() {
-	domenu "${S}/usr/share/applications/tusk-app.desktop"
+	domenu "${S}/usr/share/applications/tusk.desktop"
 
 	for size in 16 24 32 48 64 96 128 256 512; do
-		doicon -s ${size} "${S}/usr/share/icons/hicolor/${size}x${size}/apps/tusk-app.png"
+		doicon -s ${size} "${S}/usr/share/icons/hicolor/${size}x${size}/apps/tusk.png"
 	done
 
-	dodoc usr/share/doc/tusk-app/changelog.gz
+	dodoc usr/share/doc/tusk/changelog.gz
 
 	insinto /
 	doins -r opt
-	fperms +x /opt/Tusk/${PN}-app
-	dosym /opt/Tusk/${PN}-app /opt/bin/${PN}-app
+	fperms +x /opt/Tusk/${PN}
+	dosym /opt/Tusk/${PN} /opt/bin/${PN}
 }
 
 pkg_postinst() {
