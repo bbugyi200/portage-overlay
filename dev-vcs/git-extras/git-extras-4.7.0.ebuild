@@ -31,18 +31,6 @@ inherit arrays
 src_compile() { :; }
 
 src_install() {
-	# NOTE: bashcompletion is broken for now
-# 	newbashcomp etc/bash_completion.sh "${PN}"
-	insinto /usr/share/zsh/site-functions
-	newins etc/git-extras-completion.zsh "_${PN}"
-
-	rpushd bin
-	for cmd in * ; do
-		dobin "${cmd}"
-# 		[[ "${cmd}" != "${PN}" ]] && \
-# 			bashcomp_alias "${PN}" "${cmd}"
-	done
-	rpopd
-
+	emake PREFIX="${D}" install
 	doman man/*.1
 }
