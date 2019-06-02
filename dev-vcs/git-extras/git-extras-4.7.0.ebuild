@@ -31,6 +31,6 @@ inherit arrays
 src_compile() { :; }
 
 src_install() {
-	emake PREFIX="${D}" install
+	emake PREFIX="${D}"/usr install
 	doman man/*.1
 }
