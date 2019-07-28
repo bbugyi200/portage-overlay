@@ -6,17 +6,13 @@ EAPI=7
 PYTHON_COMPAT=( python2_7 python3_6 )
 inherit distutils-r1
 
-DESCRIPTION="Python Module Dependency graphs"
-HOMEPAGE="https://github.com/thebjorn/pydeps"
-SRC_URI="https://github.com/thebjorn/${PN}/archive/v${PV}.tar.gz"
+DESCRIPTION="A list of Python Standard Libraries (2.6-7, 3.2-7)."
+HOMEPAGE="https://github.com/jackmaney/python-stdlib-list"
+SRC_URI="https://github.com/jackmaney/python-${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="
-	dev-python/graphviz
-	dev-python/enum34
-	dev-python/stdlib-list
-"
+DEPEND=""
 RDEPEND="${DEPEND}"
