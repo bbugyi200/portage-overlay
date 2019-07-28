@@ -32,7 +32,3 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}"
-
-src_install() {
-    
-}
