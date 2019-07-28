@@ -12,17 +12,10 @@ EGIT_REPO_URI="https://github.com/pipxproject/${PN}"
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="test"
 
 DEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/userpath[${PYTHON_USEDEP}]
-	test? (
-		dev-python/flake8[${PYTHON_USEDEP}]
-		dev-python/mypy[${PYTHON_USEDEP}]
-		dev-python/jinja[${PYTHON_USEDEP}]
-		dev-python/mkdocs[${PYTHON_USEDEP}]
-	)
+	dev-python/setuptools
+	dev-python/userpath
 "
 RDEPEND="${DEPEND}"
 
