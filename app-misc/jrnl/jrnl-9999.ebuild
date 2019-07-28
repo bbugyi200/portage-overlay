@@ -28,6 +28,7 @@ DEPEND="
 	dev-python/pytz[${PYTHON_USEDEP}]
 	dev-python/pyyaml
 	dev-python/pyxdg
+	dev-python/passlib
 	dev-python/asteval
 	crypt? (
 		>=dev-python/pycrypto-2.6[${PYTHON_USEDEP}]
