@@ -7,8 +7,8 @@ PYTHON_COMPAT=( pypy pypy3 python{2_7,3_{6,7}} )
 inherit git-r3
 
 DESCRIPTION="Execute binaries from Python packages in isolated environments"
-HOMEPAGE="https://pipxproject.github.io/pipx/"
-EGIT_REPO_URI="https://github.com/pipxproject/${PN}"
+HOMEPAGE="https://github.com/pipxproject/pipx"
+EGIT_REPO_URI="https://github.com/pipxproject/pipx"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,8 +18,3 @@ DEPEND="
 	dev-python/userpath
 "
 RDEPEND="${DEPEND}"
-
-src_install() {
-	cd "${P}"
-	python setup.py install --prefix=/usr --root="${D}"
-}
