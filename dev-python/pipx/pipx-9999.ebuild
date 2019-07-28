@@ -4,7 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( pypy pypy3 python{2_7,3_{6,7}} )
-inherit distutils-r1
+inherit git-r3 distutils-r1
 
 DESCRIPTION="Execute binaries from Python packages in isolated environments"
 HOMEPAGE="https://pipxproject.github.io/pipx/"
