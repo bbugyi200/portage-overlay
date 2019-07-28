@@ -14,7 +14,6 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
-	dev-python/setuptools
 	dev-python/userpath
 "
 RDEPEND="${DEPEND}"
