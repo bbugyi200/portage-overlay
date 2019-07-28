@@ -18,10 +18,11 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
+src_compile() {
+    :
+}
+
 src_install() {
     cd "${P}"
-	python setup.py install --skip-build \
-		--optimize=1 \
-		--prefix=/usr \
-		--root="${D}"
+	python setup.py install --optimize=1 --prefix=/usr --root="${D}"
 }
