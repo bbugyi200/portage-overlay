@@ -17,3 +17,11 @@ DEPEND="
 	dev-python/userpath
 "
 RDEPEND="${DEPEND}"
+
+src_install() {
+    cd "${P}"
+	python setup.py install --skip-build \
+		--optimize=1 \
+		--prefix=/usr \
+		--root="${D}"
+}
