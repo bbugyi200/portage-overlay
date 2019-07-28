@@ -8,7 +8,7 @@ inherit git-r3
 
 DESCRIPTION="Cross-platform tool for adding locations to the user PATH, no elevated privileges required!"
 HOMEPAGE="https://github.com/ofek/userpath"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+EGIT_REPO_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
