@@ -16,8 +16,3 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-
-src_install() {
-    cd python-"${P}"
-	python setup.py install --prefix=/usr --root="${D}"
-}
