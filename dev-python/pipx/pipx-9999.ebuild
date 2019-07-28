@@ -10,7 +10,7 @@ DESCRIPTION="Execute binaries from Python packages in isolated environments"
 HOMEPAGE="https://pipxproject.github.io/pipx/"
 
 if [[ ${PV} == 9999 ]]; then
-	inherit git-2
+	inherit git-r3
 	EGIT_REPO_URI="https://github.com/pipxproject/${PN}"
 else
 	SRC_URI="https://github.com/pipxproject/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
