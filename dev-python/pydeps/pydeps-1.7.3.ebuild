@@ -17,6 +17,6 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="
 	dev-python/graphviz
 	dev-python/enum34
-	dev-python/stdlib-list
+	dev-python/python-stdlib-list
 "
 RDEPEND="${DEPEND}"
