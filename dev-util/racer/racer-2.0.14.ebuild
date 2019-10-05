@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Rust Code Completion utility"
 HOMEPAGE="https://github.com/racer-rust/racer"
-SRC_URI="https://github.com/racer-rust/racer/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/racer-rust/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,7 +19,7 @@ RDEPEND="${COMMON_DEPEND}"
 
 
 src_compile() {
-	cargo build --release
+	cargo build --release || die
 }
 
 src_install() {
