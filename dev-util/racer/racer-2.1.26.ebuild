@@ -1,23 +1,23 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=7
 
-inherit eutils git-r3
-
-DESCRIPTION="Rust Code Completion utility "
-HOMEPAGE="https://github.com/phildawes/racer"
+DESCRIPTION="Rust Code Completion utility"
+HOMEPAGE="https://github.com/racer-rust/racer"
+SRC_URI="https://github.com/racer-rust/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
-RESTRICT="network-sandbox"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
+RESTRICT="network-sandbox"
 
-EGIT_REPO_URI="https://github.com/phildawes/racer"
+COMMON_DEPEND="virtual/rust:*"
+DEPEND="${COMMON_DEPEND}
+	virtual/cargo"
+RDEPEND="${COMMON_DEPEND}"
 
-DEPEND="|| ( >=dev-lang/rust-1.40.0 >=dev-lang/rust-bin-1.40.0 )"
-RDEPEND="${DEPEND}"
 
 src_compile() {
 	cargo build --release || die
