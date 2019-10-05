@@ -12,12 +12,6 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-COMMON_DEPEND="virtual/rust:*"
-DEPEND="${COMMON_DEPEND}
-	virtual/cargo"
-RDEPEND="${COMMON_DEPEND}"
-
-
 src_compile() {
 	cargo build --release || die
 }
