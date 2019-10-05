@@ -16,10 +16,8 @@ IUSE=""
 
 EGIT_REPO_URI="https://github.com/phildawes/racer"
 
-COMMON_DEPEND="|| (dev-lang/rust dev-lang/rust-bin)"
-DEPEND="${COMMON_DEPEND}
-	virtual/cargo"
-RDEPEND="${COMMON_DEPEND}"
+DEPEND="|| (dev-lang/rust dev-lang/rust-bin)"
+RDEPEND="${DEPEND}"
 
 src_compile() {
 	cargo +nightly build --release
