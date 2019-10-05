@@ -20,7 +20,7 @@ DEPEND="|| ( dev-lang/rust dev-lang/rust-bin )"
 RDEPEND="${DEPEND}"
 
 src_compile() {
-	cargo +nightly build --release
+	cargo build --release
 }
 
 src_install() {
