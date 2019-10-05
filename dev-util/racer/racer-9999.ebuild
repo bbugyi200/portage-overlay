@@ -16,7 +16,7 @@ IUSE=""
 
 EGIT_REPO_URI="https://github.com/phildawes/racer"
 
-COMMON_DEPEND="virtual/rust:*"
+COMMON_DEPEND="|| (dev-lang/rust dev-lang/rust-bin)"
 DEPEND="${COMMON_DEPEND}
 	virtual/cargo"
 RDEPEND="${COMMON_DEPEND}"
