@@ -11,6 +11,13 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
+RESTRICT="network-sandbox"
+
+COMMON_DEPEND="virtual/rust:*"
+DEPEND="${COMMON_DEPEND}
+	virtual/cargo"
+RDEPEND="${COMMON_DEPEND}"
+
 
 src_compile() {
 	cargo build --release || die
