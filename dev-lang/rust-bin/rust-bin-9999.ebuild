@@ -78,7 +78,6 @@ src_install() {
 		local analysis=$(grep 'analysis' ./components)
 		components="${components},rls-preview,${analysis}"
 	fi
-	use rustfmt && components="${components},rustfmt-preview"
 	./install.sh \
 		--components="${components}" \
 		--disable-verify \
