@@ -7,6 +7,8 @@ DESCRIPTION="Executes commands in response to file modifications"
 HOMEPAGE="https://github.com/watchexec/watchexec"
 SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz"
 
+RESTRICT="network-sandbox"
+
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
