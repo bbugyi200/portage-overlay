@@ -3,11 +3,9 @@
 
 EAPI=7
 
-DESCRIPTION="a calculator REPL, similar to bc(1)"
-HOMEPAGE="https://github.com/NerdyPepper/eva"
-SRC_URI="https://github.com/NerdyPepper/${PN}/archive/v${PV}.tar.gz"
-
-RESTRICT="network-sandbox"
+DESCRIPTION="Executes commands in response to file modifications"
+HOMEPAGE="https://github.com/watchexec/watchexec"
+SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
