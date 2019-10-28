@@ -7,6 +7,8 @@ DESCRIPTION="A command-line benchmarking tool"
 HOMEPAGE="https://github.com/sharkdp/hyperfine"
 SRC_URI="https://github.com/sharkdp/${PN}/archive/v${PV}.tar.gz"
 
+RESTRICT="network-sandbox"
+
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
