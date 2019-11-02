@@ -19,5 +19,5 @@ DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-MY_PN="${PN/_/./}"
+MY_PN="${PN/_/.}"
 S="${WORKDIR}/${MY_PN}-${PV}"
