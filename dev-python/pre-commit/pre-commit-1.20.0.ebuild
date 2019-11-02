@@ -19,6 +19,7 @@ IUSE="test"
 
 RDEPEND=""
 DEPEND="${REDEPEND}
+	dev-python/aspy_yaml
 	>=dev-python/cfgv-2.0.0
 	>=dev-python/identify-1.0.0
 	dev-python/importlib_resources
