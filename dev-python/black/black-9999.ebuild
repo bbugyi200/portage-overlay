@@ -21,7 +21,7 @@ DEPEND="
 	>=dev-python/mypy_extensions-0.4.3
 	dev-python/pathspec
 	dev-python/toml
-	dev-python/typed-ast
+	>=dev-python/typed-ast-1.4.0
 	>=dev-python/typing-extensions-3.7.4
 "
 RDEPEND="${DEPEND}"
