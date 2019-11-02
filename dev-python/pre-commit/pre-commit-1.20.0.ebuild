@@ -19,6 +19,7 @@ IUSE="test"
 
 RDEPEND=""
 DEPEND="${REDEPEND}
+	>=dev-python/cfgv-2.0.0
 	>=dev-python/identify-1.0.0
 	dev-python/importlib_resources
 	>=dev-python/nodeenv-0.11.1
