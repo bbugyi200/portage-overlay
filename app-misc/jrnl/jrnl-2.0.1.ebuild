@@ -4,7 +4,6 @@
 EAPI=7
 
 PYTHON_COMPAT=( python2_7 python3_6 )
-inherit git-r3
 
 DESCRIPTION="Collect your thoughts and notes without leaving the command line."
 HOMEPAGE="https://github.com/jrnl-org/jrnl"
