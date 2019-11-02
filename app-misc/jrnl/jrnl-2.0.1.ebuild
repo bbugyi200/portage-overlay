@@ -16,20 +16,20 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="
->=dev-python/python-dateutil-2.2[${PYTHON_USEDEP}]
->=dev-python/six-1.6.1[${PYTHON_USEDEP}]
->=dev-python/keyrings_alt-3.1.1[${PYTHON_USEDEP}]
->=dev-python/keyring-3.3[${PYTHON_USEDEP}]
->=dev-python/parsedatetime-1.4[${PYTHON_USEDEP}]
->=dev-python/tzlocal-1.1.2[${PYTHON_USEDEP}]
-dev-python/pytz[${PYTHON_USEDEP}]
-dev-python/pyyaml
-dev-python/pyxdg
-dev-python/passlib
-dev-python/asteval
-crypt? (
-	>=dev-python/pycrypto-2.6[${PYTHON_USEDEP}]
-)
+	>=dev-python/python-dateutil-2.2
+	>=dev-python/six-1.6.1
+	>=dev-python/keyrings_alt-3.1.1
+	>=dev-python/keyring-3.3
+	>=dev-python/parsedatetime-1.4
+	>=dev-python/tzlocal-1.1.2
+	dev-python/pytz
+	dev-python/pyyaml
+	dev-python/pyxdg
+	dev-python/passlib
+	dev-python/asteval
+	crypt? (
+		>=dev-python/pycrypto-2.6[${PYTHON_USEDEP}]
+	)
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
