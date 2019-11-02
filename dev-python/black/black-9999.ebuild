@@ -18,6 +18,7 @@ DEPEND="
 	dev-python/attrs
 	dev-python/click
 	dev-python/dataclasses
+	dev-python/mypy_extensions
 	dev-python/toml
 	dev-python/typed-ast
 "
