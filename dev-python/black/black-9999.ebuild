@@ -14,9 +14,10 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
-	dev-python/click
-	dev-python/attrs
 	dev-python/appdirs
+	dev-python/attrs
+	dev-python/click
+	dev-python/dataclasses
 	dev-python/toml
 	dev-python/typed-ast
 "
