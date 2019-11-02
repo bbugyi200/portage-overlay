@@ -20,6 +20,7 @@ IUSE="test"
 RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/importlib_resources
+	dev-python/nodeenv
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/virtualenv-15.2.0
 	test? (
