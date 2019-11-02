@@ -28,7 +28,7 @@ DEPEND="
 	dev-python/passlib
 	dev-python/asteval
 	crypt? (
-		>=dev-python/pycrypto-2.6[${PYTHON_USEDEP}]
+		>=dev-python/pycrypto-2.6
 	)
 "
 RDEPEND="${DEPEND}"
