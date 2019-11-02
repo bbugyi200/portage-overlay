@@ -19,7 +19,5 @@ DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-
-src_prepare() {
-	cd "${S/aspy_yaml/aspy.yaml/}"
-}
+MY_PN="${PN/_/./}"
+S="${WORKDIR}/${MY_PN}-${PV}"
