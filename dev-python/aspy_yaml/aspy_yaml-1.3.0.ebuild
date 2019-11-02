@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="Some extensions to pyyaml."
 HOMEPAGE="https://github.com/asottile/aspy.yaml"
-SRC_URI="https://github.com/asottile/aspy.yaml/archive/v${PV}.tar.gz -> aspy.yaml-${PV}.tar.gz"
+SRC_URI="https://github.com/asottile/aspy.yaml/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,3 +18,8 @@ IUSE=""
 DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+
+src_prepare() {
+	cd "${S/aspy_yaml/aspy.yaml/}"
+}
