@@ -8,7 +8,7 @@ inherit git-r3
 
 DESCRIPTION="Collect your thoughts and notes without leaving the command line."
 HOMEPAGE="https://github.com/jrnl-org/jrnl"
-SRC_URI="https://github.com/jrnl-org/jrnl/archive/v2.0.1.tar.gz"
+SRC_URI="https://github.com/jrnl-org/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
