@@ -19,8 +19,9 @@ IUSE="test"
 
 RDEPEND=""
 DEPEND="${REDEPEND}
+	>=dev-python/identify-1.0.0
 	dev-python/importlib_resources
-	dev-python/nodeenv
+	>=dev-python/nodeenv-0.11.1
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/virtualenv-15.2.0
 	test? (
