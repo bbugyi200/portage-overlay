@@ -13,7 +13,7 @@ SRC_URI="https://github.com/jrnl-org/jrnl/archive/v2.0.1.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="crypt"
 
 DEPEND="
 	>=dev-python/python-dateutil-2.2
