@@ -21,6 +21,7 @@ RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/importlib_resources
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/virtualenv-15.2.0
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
