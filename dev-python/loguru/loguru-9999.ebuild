@@ -13,8 +13,9 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="
-dev-python/colorama
+dev-python/aiocontextvars
 dev-python/ansimarkup
+dev-python/colorama
 "
 
 RDEPEND="
