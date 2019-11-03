@@ -21,10 +21,15 @@ RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/aspy_yaml
 	>=dev-python/cfgv-2.0.0
+	|| ( >=dev-lang/python-3.2.0 dev-python/futures )
 	>=dev-python/identify-1.0.0
-	dev-python/importlib_resources
+	|| ( >=dev-lang/python-3.8.0 dev-python/importlib_metadata )
+	|| ( >=dev-lang/python-3.7.0 dev-python/importlib_resources )
 	>=dev-python/nodeenv-0.11.1
+	dev-python/pyyaml
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/six
+	dev-python/toml
 	>=dev-python/virtualenv-15.2.0
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
