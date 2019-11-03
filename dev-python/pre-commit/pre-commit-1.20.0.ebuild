@@ -28,9 +28,11 @@ DEPEND="${REDEPEND}
 	dev-python/six
 	dev-python/toml
 	>=dev-python/virtualenv-15.2.0
+
 	|| ( >=dev-lang/python-3.2.0 dev-python/futures )
 	|| ( >=dev-lang/python-3.8.0 dev-python/importlib_metadata )
 	|| ( >=dev-lang/python-3.7.0 dev-python/importlib_resources )
+
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
