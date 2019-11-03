@@ -30,13 +30,14 @@ DEPEND="${REDEPEND}
 	>=dev-python/virtualenv-15.2.0
 
 	|| ( >=dev-lang/python-3.2.0 dev-python/futures )
-	|| ( >=dev-lang/python-3.8.0 dev-python/importlib_metadata )
 	|| ( >=dev-lang/python-3.7.0 dev-python/importlib_resources )
+	|| ( >=dev-lang/python-3.8.0 dev-python/importlib_metadata )
 
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+	)
+"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
 
