@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python2_7 python3_6 )
+PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r3
 
 MY_PV="${PV/_beta/b0}"
