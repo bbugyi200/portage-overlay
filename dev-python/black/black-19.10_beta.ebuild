@@ -35,6 +35,6 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 
 
 src_install() {
-	cd "${S}" || die "Directory does not exist."
+	cd "${PN}-${MY_PV}" || die "Directory does not exist."
     python setup.py install --prefix=/usr --root="${D}"
 }
