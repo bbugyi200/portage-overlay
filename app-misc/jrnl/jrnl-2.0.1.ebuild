@@ -15,17 +15,17 @@ KEYWORDS="~amd64 ~x86"
 IUSE="crypt"
 
 DEPEND="
-	>=dev-python/python-dateutil-2.2
-	>=dev-python/six-1.6.1
+	>=dev-python/asteval-0.9.8
+	>=dev-python/keyring-7.3
 	>=dev-python/keyrings_alt-3.1.1
-	>=dev-python/keyring-3.3
-	>=dev-python/parsedatetime-1.4
-	>=dev-python/tzlocal-1.1.2
-	dev-python/pytz
-	dev-python/pyyaml
-	dev-python/pyxdg
-	dev-python/passlib
-	dev-python/asteval
+	>=dev-python/parsedatetime-1.5
+	>=dev-python/passlib-1.6.2
+	>=dev-python/python-dateutil-2.2
+	>=dev-python/pytz-2015.7
+	>=dev-python/pyxdg-0.25
+	>=dev-python/pyyaml-3.11
+	>=dev-python/six-1.10.0
+	>=dev-python/tzlocal-1.2.0
 	crypt? (
 		>=dev-python/pycrypto-2.6
 	)
