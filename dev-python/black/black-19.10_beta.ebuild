@@ -6,7 +6,6 @@ EAPI=7
 PYTHON_COMPAT=( python2_7 python3_6 )
 
 MY_PV="${PV/_beta/b0}"
-MY_P="${PN}-${MY_PV}"
 
 DESCRIPTION="The uncompromising Python code formatter https://black.readthedocs.io/en/stable/"
 HOMEPAGE="https://github.com/psf/black"
@@ -32,10 +31,10 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 
 src_install() {
-	cd "${MY_P}"
+	cd "${PN}-${MY_PV}" || die "Directory does not exist."
     python setup.py install --prefix=/usr --root="${D}"
 }
