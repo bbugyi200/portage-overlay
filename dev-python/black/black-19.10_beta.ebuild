@@ -24,7 +24,6 @@ DEPEND="
 	|| ( >=dev-lang/python-3.7.0 dev-python/dataclasses )
 	>=dev-python/mypy_extensions-0.4.3
 	>=dev-python/pathspec-0.6
-	<dev-python/pathspec-1.0.0
 	dev-python/regex
 	>=dev-python/toml-0.9.4
 	>=dev-python/typed-ast-1.4.0
