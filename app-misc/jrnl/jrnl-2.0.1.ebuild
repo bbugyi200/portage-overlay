@@ -24,8 +24,8 @@ DEPEND="
 	>=dev-python/pytz-2015.7
 	>=dev-python/pyxdg-0.25
 	>=dev-python/pyyaml-3.11
-	>=dev-python/six-1.10.0
-	>=dev-python/tzlocal-1.2.0
+	>=dev-python/six-1.10
+	>=dev-python/tzlocal-1.2
 	crypt? (
 		>=dev-python/pycrypto-2.6
 	)
