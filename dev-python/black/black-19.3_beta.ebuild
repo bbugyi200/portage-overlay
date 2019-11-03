@@ -10,7 +10,7 @@ MY_PV="${PV/_beta/b0}"
 
 DESCRIPTION="The uncompromising Python code formatter https://black.readthedocs.io/en/stable/"
 HOMEPAGE="https://github.com/psf/black"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${PN}-${MY_PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/psf/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
