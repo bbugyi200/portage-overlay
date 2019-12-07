@@ -15,18 +15,18 @@ SLOT="0"
 KEYWORDS=""
 IUSE="doc test"
 
-RDEPEND=">=dev-python/colorama-0.3.4[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/colorama-0.3.4"
 DEPEND="
 	doc? (
-		dev-python/sphinx[${PYTHON_USEDEP}]
-		dev-python/sphinx_rtd_theme[${PYTHON_USEDEP}]
+		dev-python/sphinx
+		dev-python/sphinx_rtd_theme
 	)
 	test? (
 		${RDEPEND}
-		>=dev-python/pytest-4.5.0[${PYTHON_USEDEP}]
+		>=dev-python/pytest-4.5.0
 	)
 "
-BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+BDEPEND="dev-python/setuptools"
 
 src_install() {
 	cd "${P}"
