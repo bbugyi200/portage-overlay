@@ -4,7 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python2_7 python3_6 )
-inherit distutils-r1
+inherit git-r3
 
 DESCRIPTION="Python logging made (stupidly) simple"
 HOMEPAGE="https://github.com/Delgan/loguru"
@@ -27,3 +27,8 @@ DEPEND="
 	)
 "
 BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+
+src_install() {
+	cd "${P}"
+    python setup.py install --prefix=/usr --root="${D}"
+}
