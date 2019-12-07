@@ -8,7 +8,7 @@ inherit git-r3
 
 DESCRIPTION="Python logging made (stupidly) simple"
 HOMEPAGE="https://github.com/Delgan/loguru"
-SRC_URI="https://github.com/Delgan/loguru"
+EGIT_REPO_URI="https://github.com/Delgan/loguru"
 
 LICENSE="MIT"
 SLOT="0"
