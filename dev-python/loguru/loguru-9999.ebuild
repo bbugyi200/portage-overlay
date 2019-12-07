@@ -13,7 +13,7 @@ SRC_URI="https://github.com/Delgan/loguru"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="doc test"
 
 RDEPEND=">=dev-python/colorama-0.3.4[${PYTHON_USEDEP}]"
 DEPEND="
