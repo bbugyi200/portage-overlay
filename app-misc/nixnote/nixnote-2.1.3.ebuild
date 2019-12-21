@@ -64,6 +64,7 @@ src_prepare() {
 
 	eapply "${FILESDIR}"/tidy-source-dir-location.patch
 	eapply "${FILESDIR}"/fix-build-script.patch
+	eapply_user
 }
 
 src_configure() {
