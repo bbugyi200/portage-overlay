@@ -24,6 +24,8 @@ IUSE="test"
 DEPEND="
 	dev-python/setuptools
 	dev-python/userpath
+	>=dev-python/argcomplete-1.9.4
+	<dev-python/argcomplete-2.0
 	test? (
 		dev-python/flake8[${PYTHON_USEDEP}]
 		dev-python/mypy[${PYTHON_USEDEP}]
