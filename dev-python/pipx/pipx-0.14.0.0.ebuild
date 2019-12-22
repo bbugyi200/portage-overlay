@@ -22,8 +22,8 @@ SLOT="0"
 IUSE="test"
 
 DEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/userpath[${PYTHON_USEDEP}]
+	dev-python/setuptools
+	dev-python/userpath
 	test? (
 		dev-python/flake8[${PYTHON_USEDEP}]
 		dev-python/mypy[${PYTHON_USEDEP}]
