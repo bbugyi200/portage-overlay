@@ -29,3 +29,8 @@ dev-python/cached-property
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+src_install() {
+	cd "${P}"
+    python setup.py install --prefix=/usr --root="${D}"
+}
