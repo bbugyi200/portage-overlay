@@ -25,7 +25,7 @@ dev-python/asttokens
 >=dev-python/littleutils-0.2
 dev-python/cheap_repr
 dev-python/outdated
-dev-python/cached_property
+dev-python/cached-property
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
