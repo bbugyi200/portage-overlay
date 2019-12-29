@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python2_7 python3_7 )
+PYTHON_COMPAT=( python2_7 python3_{6,7} )
 inherit git-r3
 
 DESCRIPTION="The uncompromising Python code formatter"
@@ -17,7 +17,7 @@ DEPEND="
 	dev-python/appdirs
 	>=dev-python/attrs-18.1.0
 	>=dev-python/click-6.5
-	|| ( >=dev-lang/python-3.7.0 >=dev-python/dataclasses-0.6 )
+	>=dev-python/dataclasses-0.6
 	>=dev-python/mypy_extensions-0.4.3
 	>=dev-python/pathspec-0.6
 	dev-python/regex
