@@ -19,7 +19,6 @@ DEPEND="
 dev-python/flask
 dev-python/sqlalchemy
 dev-python/future
-
 dev-python/flask-humanize
 dev-python/asttokens
 >=dev-python/littleutils-0.2
