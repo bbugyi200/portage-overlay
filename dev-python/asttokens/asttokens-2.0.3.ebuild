@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="Annotate Python AST trees with source text and token information"
 HOMEPAGE="https://github.com/gristlabs/asttokens"
-SRC_URI="https://github.com/gristlabs/asttokens/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/gristlabs/asttokens/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
