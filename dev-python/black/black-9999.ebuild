@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python2_7 python3_6 )
+PYTHON_COMPAT=( python2_7 python3_{6,7} )
 inherit git-r3
 
 DESCRIPTION="The uncompromising Python code formatter"
