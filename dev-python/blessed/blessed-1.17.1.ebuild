@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Simplified curses wrapper"
 HOMEPAGE="https://pypi.python.org/pypi/blessed https://github.com/jquast/blessed"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/jquast/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
