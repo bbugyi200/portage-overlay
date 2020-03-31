@@ -24,10 +24,6 @@ DEPEND="
 	${RDEPEND}
 	virtual/pkgconfig
 "
-PATCHES=(
-	"${FILESDIR}"/${PN}-9999-gentoo.patch
-	"${FILESDIR}"/${PN}-0.15-stop-installing-terminfo.patch
-)
 
 src_prepare() {
 	default
