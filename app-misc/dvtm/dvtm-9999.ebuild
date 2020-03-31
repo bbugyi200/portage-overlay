@@ -26,6 +26,7 @@ DEPEND="
 "
 PATCHES=(
 	"${FILESDIR}"/${PN}-9999-gentoo.patch
+	"${FILESDIR}"/${PN}-stop-installing-terminfo.patch
 )
 
 src_prepare() {
