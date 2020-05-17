@@ -62,6 +62,7 @@ src_prepare() {
 	QT_SELECT=qt5 lupdate -pro nixnote2.pro -no-obsolete || die
 	QT_SELECT=qt5 lrelease nixnote2.pro || die
 
+	eapply "${FILESDIR}"/tidy-source-dir-location.patch
 	eapply "${FILESDIR}"/fix-build-script.patch
 	eapply_user
 }
