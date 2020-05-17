@@ -124,7 +124,6 @@ src_prepare() {
 }
 
 src_configure() {
-    die "LIBRARY_PATH = $LIBRARY_PATH\nLD_LIBRARY_PATH = $LD_LIBRARY_PATH\nLPATH = $LPATH\nGCC_EXEC_PREFIX = $GCC_EXEC_PREFIX"
 	case ${CHOST} in
 		*-darwin*|*-solaris*)
 			use nls && append-libs intl
@@ -173,6 +172,7 @@ src_configure() {
 		$(use_with xml libxslt) \
 		$(use_with zlib) \
 		$(use_enable nls nls "'$(l10n_get_locales)'")
+    die "LIBRARY_PATH = $LIBRARY_PATH\nLD_LIBRARY_PATH = $LD_LIBRARY_PATH\nLPATH = $LPATH\nGCC_EXEC_PREFIX = $GCC_EXEC_PREFIX"
 }
 
 src_compile() {
