@@ -9,3 +9,7 @@ inherit weechat
 
 DESCRIPTION="Quick jump to buffers."
 SLOT="0"
+
+src_configure() {
+    die "LIBRARY_PATH = $LIBRARY_PATH"
+}
