@@ -36,7 +36,7 @@ src_install() {
 
 	cat >> "${T}/${PN}" <<- EOF
 	#!/bin/sh
-	exec ${PYTHON} -O "$(python_get_sitedir)/${PN}.py"
+	exec ${PYTHON} -O "$(python_get_sitedir)/${PN}/${PN}.py"
 	EOF
 	dobin "${T}/${PN}"
 
