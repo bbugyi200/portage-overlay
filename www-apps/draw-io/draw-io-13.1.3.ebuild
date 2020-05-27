@@ -18,7 +18,10 @@ KEYWORDS="~amd64 ~x86"
 IUSE="vhosts"
 
 DEPEND="${WEBAPP_DEPEND}"
-RDEPEND="${DEPEND}"
+RDEPEND="
+${DEPEND}
+>=www-servers/apache-1.3
+"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
 
