@@ -8,7 +8,7 @@ inherit git-r3
 
 DESCRIPTION="Scalene: a high-performance, high-precision CPU and memory profiler for Python"
 HOMEPAGE="https://github.com/emeryberger/scalene"
-EGIT_REPO_URI="https://github.com/tldr-pages/tldr-python-client/archive/${PV}.tar.gz"
+EGIT_REPO_URI="https://github.com/emeryberger/scalene"
 
 LICENSE="MIT"
 SLOT="0"
