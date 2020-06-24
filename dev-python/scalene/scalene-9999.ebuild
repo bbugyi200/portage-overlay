@@ -6,6 +6,8 @@ EAPI=7
 PYTHON_COMPAT=( python3_{6,7,8} )
 inherit git-r3
 
+RESTRICT="network-sandbox"
+
 DESCRIPTION="Scalene: a high-performance, high-precision CPU and memory profiler for Python"
 HOMEPAGE="https://github.com/emeryberger/scalene"
 EGIT_REPO_URI="https://github.com/emeryberger/scalene"
