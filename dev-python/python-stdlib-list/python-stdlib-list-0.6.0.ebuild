@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="A list of Python Standard Libraries (2.6-7, 3.2-7)."
 HOMEPAGE="https://github.com/jackmaney/python-stdlib-list"
-SRC_URI="https://github.com/jackmaney/${PN}/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/jackmaney/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
