@@ -20,7 +20,4 @@ src_install() {
 
 	dodoc -r examples
 	dodoc doc/*.txt
-
-	docinto html
-	dodoc doc/*.html
 }
