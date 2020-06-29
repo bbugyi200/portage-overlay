@@ -10,7 +10,7 @@ RESTRICT="network-sandbox"
 
 DESCRIPTION="Annotate Python AST trees with source text and token information"
 HOMEPAGE="https://github.com/gristlabs/asttokens"
-SRC_URI="https://github.com/gristlabs/asttokens/archive/v${PV}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
