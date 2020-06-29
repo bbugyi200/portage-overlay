@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python2_7 python3_6 )
+PYTHON_COMPAT=( python2_7 python3_{6,7,8} )
 inherit git-r3
 
 DESCRIPTION="Graphical Python debugger which lets you easily view the values of all evaluated expressions"
