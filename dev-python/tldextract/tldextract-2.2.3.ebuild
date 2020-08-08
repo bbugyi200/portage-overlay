@@ -4,7 +4,6 @@
 EAPI=6
 
 PYTHON_COMPAT=( python3_{6,7,8} )
-inherit distutils-r1
 
 DESCRIPTION="Accurately separate the TLD from the registered domain and subdomains of a URL"
 HOMEPAGE="https://github.com/john-kurkowski/tldextract"
@@ -21,3 +20,8 @@ RDEPEND="
 	dev-python/idna[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 "
+
+src_install() {
+	cd "${P}"
+	python setup.py install --prefix=/usr --root="${D}"
+}
