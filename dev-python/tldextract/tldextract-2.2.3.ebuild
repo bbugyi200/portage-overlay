@@ -8,7 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="Accurately separate the TLD from the registered domain and subdomains of a URL"
 HOMEPAGE="https://github.com/john-kurkowski/tldextract"
-SRC_URI="https://files.pythonhosted.org/packages/45/90/827138ee22b7635e8c71373530e5fabccd89ec636ba6ecedd442b3ecbf5a/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://files.pythonhosted.org/packages/45/90/827138ee22b7635e8c71373530e5fabccd89ec636ba6ecedd442b3ecbf5a/${P}.tar.gz"
 
 SLOT="0"
 LICENSE="BSD"
