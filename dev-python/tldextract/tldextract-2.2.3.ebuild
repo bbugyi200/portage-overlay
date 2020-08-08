@@ -3,12 +3,12 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
+PYTHON_COMPAT=( python2_7 python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Accurately separate the TLD from the registered domain and subdomains of a URL"
 HOMEPAGE="https://github.com/john-kurkowski/tldextract"
-SRC_URI="https://github.com/john-kurkowski/tldextract/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://files.pythonhosted.org/packages/45/90/827138ee22b7635e8c71373530e5fabccd89ec636ba6ecedd442b3ecbf5a/${PV}.tar.gz -> ${P}.tar.gz"
 
 SLOT="0"
 LICENSE="BSD"
