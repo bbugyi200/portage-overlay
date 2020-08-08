@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 
 DESCRIPTION="Accurately separate the TLD from the registered domain and subdomains of a URL"
 HOMEPAGE="https://github.com/john-kurkowski/tldextract"
@@ -15,10 +15,10 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-python/requests-2.1.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-file-1.4[${PYTHON_USEDEP}]
-	dev-python/idna[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.1.0
+	>=dev-python/requests-file-1.4
+	dev-python/idna
+	dev-python/setuptools
 "
 
 src_install() {
